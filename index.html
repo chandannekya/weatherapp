@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body  >
+    <div class="h-screen w-screen bg-black flex items-center justify-center text-black" > 
+        <div class="bg-white  max-w-sm rounded-2xl" >
+            <div class="h-11 bg-blue-200 m-7 rounded-full flex justify-between items-center" >
+            
+                <input type="text" placeholder="your city name" class="bg-transparent ml-5 outline-none">
+              <button type="button" class="mr-4    float-right"><i class="fa fa-search" aria-hidden="true" ></i></button>
+
+
+            </div>
+            
+            <div class="flex flex-col justify-center items-center">
+                <img class="h-32 w-36" src="cloudy.png" alt="" srcset="" id="imgw">
+               <div class="flex flex-col justify-center items-center font-black">
+                <h1 class="text-5xl" id="temp">0°C</h1>
+                <h1 class="text-xl" id="city"></h1> 
+                <div class="flex  gap-16 p-8" >
+                    <div class="flex items-center gap-2 ">
+                        <img class="h-14" src="humidity.png" alt="" srcset="">
+                        <div class="flex flex-col">
+                        <p class="text-3xl" id="humidity">0%</p>
+                        <p class="text-xs">Humidity</p>
+                    </div>
+                    </div>
+                    <div class="flex items-center gap-2 mr-3">
+
+                        <img class="h-14" src="wind.png" alt="" srcset="">
+                        <div class="flex flex-col">
+                        <p class="text-xl" id="wind">0km/h</p>
+                <p class="text-xs">wind speed</p>
+            </div>               
+        </div>
+                </div>
+               </div> 
+            </div>
+                
+                   
+        
+                
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="scrip.js"></script>
+</body>
+</html>
