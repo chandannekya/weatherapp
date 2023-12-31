@@ -3,54 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Go Weather</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body  >
-    <div class="h-screen w-screen bg-black flex items-center justify-center text-black" > 
-        <div class="bg-white  max-w-sm rounded-2xl" >
-            <div class="h-11 bg-blue-200 m-7 rounded-full flex justify-between items-center" >
-            
-                <input type="text" placeholder="your city name" class="bg-transparent ml-5 outline-none">
-              <button type="button" class="mr-4    float-right"><i class="fa fa-search" aria-hidden="true" ></i></button>
-
-
-            </div>
-            
-            <div class="flex flex-col justify-center items-center">
-                <img class="h-32 w-36" src="cloudy.png" alt="" srcset="" id="imgw">
-               <div class="flex flex-col justify-center items-center font-black">
-                <h1 class="text-5xl" id="temp">0°C</h1>
-                <h1 class="text-xl" id="city"></h1> 
-                <div class="flex  gap-16 p-8" >
-                    <div class="flex items-center gap-2 ">
-                        <img class="h-14" src="humidity.png" alt="" srcset="">
-                        <div class="flex flex-col">
-                        <p class="text-3xl" id="humidity">0%</p>
-                        <p class="text-xs">Humidity</p>
-                    </div>
-                    </div>
-                    <div class="flex items-center gap-2 mr-3">
-
-                        <img class="h-14" src="wind.png" alt="" srcset="">
-                        <div class="flex flex-col">
-                        <p class="text-xl" id="wind">0km/h</p>
-                <p class="text-xs">wind speed</p>
-            </div>               
-        </div>
+<body>
+    <div class="bg-neutral-900 h-screen">
+        <nav class="bg-[#701a75] py-3 text-lg text-center font-bold text-white">Go Weather</nav>
+        <div class="flex items-center justify-center text-black h-[90%] px-4">
+            <div class="bg-white max-w-sm rounded-2xl p-2  ">
+                <div class="h-11 bg-blue-200 m-7 rounded-full flex justify-between items-center">
+                    <input type="text" placeholder="your city name" class="bg-transparent ml-5 outline-none w-full">
+                    <button type="button" class="mr-4 rounded-full w-8 h-8 float-right hover:bg-sky-100">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
                 </div>
-               </div> 
-            </div>
-                
-                   
-        
-                
-            </div>
+                <div class="flex flex-col justify-center items-center">
+                    <img class="h-32 w-36" src="cloudy.png" alt="" srcset="" id="imgw">
+                    <div class="flex flex-col justify-center items-center font-black">
+                        <h1 class="text-5xl" id="temp">0°C</h1>
+                        <h1 class="text-xl" id="city"></h1>
+                        <div class="flex gap-16 p-8">
+                            <div class="flex items-center gap-2">
+                                <img class="h-14" src="humidity.png" alt="" srcset="">
+                                <div class="flex flex-col">
+                                    <p class="text-3xl" id="humidity">0%</p>
+                                    <p class="text-xs">Humidity</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 mr-3">
+                                <img class="h-14" src="wind.png" alt="" srcset="">
+                                <div class="flex flex-col">
+                                    <p class="text-xl" id="wind">0km/h</p>
+                                    <p class="text-xs">Wind Speed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <footer class="bg-[#701a75] p-3 mb-0 absolute w-full bottom-0 text-center text-white">&copy; 2023 @chandannekya. All rights reserved.</footer>
     </div>
     <script src="scrip.js"></script>
 </body>

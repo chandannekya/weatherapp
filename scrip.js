@@ -33,6 +33,10 @@ async function weatherupdate(city){
   else if(weather_data.weather[0].description=="rain"){
     weatherimg.src="rain(1).png";
   }
+  else if(weather_data.weather[0].description=="mist"){
+    weatherimg.src="haze.png";
+  }
+  
 }
 
 
@@ -40,4 +44,9 @@ async function weatherupdate(city){
 searchbt.addEventListener("click",()=>{
     weatherupdate(inpb.value);
     
+});
+inpb.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    weatherupdate(inpb.value);
+  }
 });
