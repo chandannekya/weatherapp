@@ -11,17 +11,24 @@
 </head>
 
 <body>
-    <div class="bg-neutral-900 h-screen">
-        <nav class="bg-[#701a75] py-3 text-lg text-center font-bold text-white">Go Weather</nav>
+    <div class="  bg-opacity-50 bg-cover bg-center h-screen transition-background-image duration-300" id="main">
+       
+        <nav class="bg-[#701a75] py-3 text-lg text-center font-bold bg-opacity-30 text-white flex justify-between pl-5 " id="nav">
+           <div class="flex gap-2 items-center justify-start"> <img src="/favicon.png" alt="" srcset="" class="h-5 ">
+            Go Weather</div>
+            
+        </nav>
         <div class="flex items-center justify-center text-black h-[90%] px-4">
-            <div class="bg-white max-w-sm rounded-2xl p-2  ">
-                <div class="h-11 bg-blue-200 m-7 rounded-full flex justify-between items-center">
+            <div class="bg-white  max-w-sm rounded-2xl p-2 bg-opacity-25  " id="container">
+              
+                
+                <div class="h-11 border-2 border-black m-7 rounded-full flex justify-between items-center " id="searchbar">
                     <input type="text" placeholder="your city name" class="bg-transparent ml-5 outline-none w-full">
-                    <button type="button" class="mr-4 rounded-full w-8 h-8 float-right hover:bg-sky-100">
+                    <button type="button" class="mr-4 rounded-full w-8 h-8 float-right ">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </button>
                 </div>
-                <div class="flex flex-col justify-center items-center">
+                <div class="flex flex-col justify-center items-center hidden  transition-all duration-500 "  id="weatherDetails">
                     <img class="h-32 w-36" src="cloudy.png" alt="" srcset="" id="imgw">
                     <div class="flex flex-col justify-center items-center font-black">
                         <h1 class="text-5xl" id="temp">0°C</h1>
@@ -46,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <footer class="bg-[#701a75] p-3 mb-0 absolute w-full bottom-0 text-center text-white">&copy; 2023 @chandannekya. All rights reserved.</footer>
+        <footer class="bg-[#701a75] p-3 mb-0 absolute w-full bottom-0 text-center bg-opacity-30 text-white">&copy; 2023 @chandannekya. All rights reserved.</footer>
     </div>
     <script src="scrip.js"></script>
 </body>
