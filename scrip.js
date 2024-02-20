@@ -74,7 +74,7 @@ async function weatherupdate(city){
     bg.style.backgroundImage="url('rain.jpg')";
   }
   else if(weather_data.weather[0].description=="mist"){
-    weatherimg.src="haze .png";
+    weatherimg.src="haze.png";
    
     bg.style.backgroundImage="url('haze.jpg')";
   }
