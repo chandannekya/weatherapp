@@ -71,12 +71,12 @@ async function weatherupdate(city){
   else if(weather_data.weather[0].description=="rain"){
     weatherimg.src="rain(1).png";
     
-    bg.style.backgroundImage="url('rain.jpg')";
+    bg.style.backgroundImage="url('rainimg.jpg')";
   }
   else if(weather_data.weather[0].description=="mist"){
     weatherimg.src="haze.png";
    
-    bg.style.backgroundImage="url('haze.jpg')";
+    bg.style.backgroundImage="url('mist.jpg')";
   }
 
   document.getElementById("weatherDetails").classList.remove("hidden");
